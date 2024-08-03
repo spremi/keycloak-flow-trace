@@ -37,6 +37,71 @@ public class TraceAuthenticatorFactory implements AuthenticatorFactory {
 
     static {
         configProperties = ProviderConfigurationBuilder.create()
+                .property()
+                .name(TraceConstants.CFG_USER_ID)
+                .type(ProviderConfigProperty.BOOLEAN_TYPE)
+                .label(TraceConstants.LBL_USER_ID)
+                .defaultValue(false)
+                .helpText(TraceConstants.HLP_USER_ID)
+                .add()
+
+                .property()
+                .name(TraceConstants.CFG_EXEC_STATUS)
+                .type(ProviderConfigProperty.BOOLEAN_TYPE)
+                .label(TraceConstants.LBL_EXEC_STATUS)
+                .defaultValue(false)
+                .name(TraceConstants.HLP_EXEC_STATUS)
+                .add()
+
+                .property()
+                .name(TraceConstants.CFG_AUTH_NOTES)
+                .type(ProviderConfigProperty.STRING_TYPE)
+                .label(TraceConstants.LBL_AUTH_NOTES)
+                .defaultValue("")
+                .helpText(TraceConstants.HLP_AUTH_NOTES)
+                .add()
+
+                .property()
+                .name(TraceConstants.CFG_ALL_SESSION_NOTES)
+                .type(ProviderConfigProperty.BOOLEAN_TYPE)
+                .label(TraceConstants.LBL_ALL_SESSION_NOTES)
+                .defaultValue(false)
+                .helpText(TraceConstants.HLP_ALL_SESSION_NOTES)
+                .add()
+
+                .property()
+                .name(TraceConstants.CFG_SESSION_NOTES)
+                .type(ProviderConfigProperty.STRING_TYPE)
+                .label(TraceConstants.LBL_SESSION_NOTES)
+                .defaultValue("")
+                .helpText(TraceConstants.HLP_SESSION_NOTES)
+                .add()
+
+                .property()
+                .name(TraceConstants.CFG_ALL_CLIENT_NOTES)
+                .type(ProviderConfigProperty.BOOLEAN_TYPE)
+                .label(TraceConstants.LBL_ALL_CLIENT_NOTES)
+                .defaultValue(false)
+                .helpText(TraceConstants.HLP_ALL_CLIENT_NOTES)
+                .add()
+
+                .property()
+                .name(TraceConstants.CFG_CLIENT_NOTES)
+                .type(ProviderConfigProperty.STRING_TYPE)
+                .label(TraceConstants.LBL_CLIENT_NOTES)
+                .defaultValue("")
+                .helpText(TraceConstants.HLP_CLIENT_NOTES)
+                .add()
+
+                .property()
+                .name(TraceConstants.CFG_RET_STATUS)
+                .type(ProviderConfigProperty.LIST_TYPE)
+                .label(TraceConstants.LBL_RET_STATUS)
+                .options(TraceConstants.RET_STATUS)
+                .defaultValue(TraceConstants.RET_STATUS_SUCCESS)
+                .helpText(TraceConstants.HLP_RET_STATUS)
+                .add()
+
                 .build();
     }
 
