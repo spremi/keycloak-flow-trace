@@ -1,0 +1,9 @@
+{
+    "name": "keycloak-flow-trace",
+    "license": "MIT",
+    "author": {
+        "name": "Sanjeev Premi",
+        "email": "spremi@ymail.com",
+        "url": "https://github.com/spremi"
+    }
+}

@@ -1,0 +1,27 @@
+#
+# keycloak-flow-trace
+#
+# Files and directories to be ignored.
+#
+
+#
+# IDE
+#
+.idea/
+.settings/
+.vscode/
+
+*.iml
+
+#
+# Generated files
+#
+target/
+
+#
+# Patch & Diff
+#
+*.diff
+*.patch
+*.orig
+*.rej
