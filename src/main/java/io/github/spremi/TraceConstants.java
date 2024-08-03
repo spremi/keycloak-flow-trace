@@ -65,4 +65,6 @@ public class TraceConstants {
             RET_STATUS_SUCCESS,
             RET_STATUS_FAILURE,
             RET_STATUS_ATTEMPTED);
+
+    public static final String MSG_ERROR = "trace-error-message";
 }
